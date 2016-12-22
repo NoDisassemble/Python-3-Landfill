@@ -3,6 +3,7 @@ import time
 print('''
 --------------------------------------------------------------------------------
 A simple program that prints whatever you type for however many times you say.
+Keywords [Python Word Repeater, Character Repeater]
 Dec 2016 v1.0
 by
 NoDisassemble.me
@@ -29,8 +30,3 @@ while True:
         input("Press Enter to try again:")
         print('')
         continue
-
-
-
-
-
