@@ -3,6 +3,7 @@ import time
 print('''
 --------------------------------------------------------------------------
 A simple program that counts to whatever number you enter.
+Keywords [Count To A Number, Python Counting]
 Dec 2016 v1.0
 by
 NoDisassemble.me
