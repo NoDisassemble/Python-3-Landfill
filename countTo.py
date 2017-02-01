@@ -1,13 +1,13 @@
 import time
 
 print('''
---------------------------------------------------------------------------
-A simple program that counts to whatever number you enter.
+-----------------------------------------------------------------------------
+Description: A simple program that counts to whatever whole number you enter.
 Keywords [Count To A Number, Python Counting]
-Dec 2016 v2.0
+Jan 2017 v2.0
 by
 NoDisassemble.me
---------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 ''')
 
 while True:
