@@ -30,7 +30,7 @@ def loadingBar1():
 # Program for Loading Bar 2
 def loadingBar2():
     print("")
-    loading = "[+]Loading Bar 2: [-------------------]"
+    loading = "[+] Loading Bar 2: [-------------------]"
     for i in range(101):
         time.sleep(0.03)
         sys.stdout.write("\r" + loading + " %d%%" % i)
