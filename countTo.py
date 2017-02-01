@@ -23,7 +23,8 @@ while True:
     print("[+] Counting to", number, "[+]")
     count = 1
     while count <= int(number):
-        print (count)
+        time.sleep(.3)
+        print(count)
         count += 1
     print("[!] Counting complete [!]")
     print("")
