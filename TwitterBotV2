@@ -1,0 +1,60 @@
+from twitter import *
+import time
+
+print('''
+=========================================================================
+___________       .__  __    __                 __________        __
+\__    ___/_  _  _|__|/  |__/  |_  ___________  \______   \ _____/  |_
+  |    |  \ \/ \/ /  \   __\   __\/ __ \_  __ \  |    |  _//  _ \   __\\
+  |    |   \     /|  ||  |  |  | \  ___/|  | \/  |    |   (  <_> )  |
+  |____|    \/\_/ |__||__|  |__|  \___  >__|     |______  /\____/|__|
+                                      \/                \/
+=========================================================================
+Description: Basic Twitter Bot using a list
+Jan 2017 v2.0
+by
+NoDisassemble.me
+=========================================================================
+''')
+
+# /------------------------------------ Auth Keys --------------------------------------/
+
+access_token = "Access Token"
+access_token_secret = "Access Token"
+consumer_key = "Consumer Key"
+consumer_secret = "Consumer Secret"
+
+t = Twitter(auth=OAuth(access_token, access_token_secret, consumer_key, consumer_secret))
+
+# /--------------- Messages ------------------/
+twitterList = [
+    # 0
+    "Number 5 is alive!",
+    # 1
+    "Hey, laser lips, your mama was a snow blower.",
+    # 2
+    "Malfunction. Need input.",
+    # 3
+    "Come on, treads, don't fail me now!",
+    # 4
+    "No Disassemble!",
+    ]
+# /------------ Program Actual --------------/
+while True:
+    try:
+        count = 0
+        while count <= 4:
+            t.statuses.update(status=twitterList[count])
+            print("[+] #" + str(count) + " Posted to Twitter [+]")
+            print(twitterList[count])
+            print("")
+            print("[!] Waiting 30 minutes till next Tweet [!]")
+            time.sleep(1800)
+            print("")
+            count += 1
+        else:
+            continue
+# /--------------- Catches any Errors and prints them ------------------/
+    except TwitterError as e:
+        print(e)
+    print("")
